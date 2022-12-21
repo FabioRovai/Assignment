@@ -24,8 +24,7 @@ def get_best_params_for_random_forest(X_train: pd.DataFrame, y_train: pd.Series,
 
     # Define the parameter grid for the HalvingGridSearchCV
     param_grid = {
-        "max_depth": [1, 10],
-        "min_samples_split": [1, 10]
+        "max_depth": [1, 10]
     }
 
     # Initialize the HalvingGridSearchCV with the parameter grid, using n_estimators as the resource
