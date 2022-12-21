@@ -52,5 +52,5 @@ if __name__ == '__main__':
     # Serialize the dictionary to a JSON string
     json_string = json.dumps(my_dict)
 
-    with open("../data_cols.json", "w") as outfile:
+    with open("../json_files/data_cols.json", "w") as outfile:
         outfile.write(json_string)
