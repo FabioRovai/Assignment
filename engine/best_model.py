@@ -36,7 +36,7 @@ def evaluate_classifiers(classifiers: List[BaseEstimator],
         eval_time = end - start
 
         # Calculate various evaluation scores
-        score = clf.score(X_test.values, y_test.values)
+        score = clf.score(X_test.values, y_pred)
         recall = recall_score(y_test.values, y_pred)
         precision = precision_score(y_test.values, y_pred)
         f1 = f1_score(y_test.values, y_pred)
