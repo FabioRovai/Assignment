@@ -17,7 +17,7 @@ if __name__ == '__main__':
     from engine.optimisation import get_best_params_for_random_forest,calibrate_random_forest
 
     # Open and load the data column names from the json file
-    with open('data_cols.json', 'r') as openfile:
+    with open('json_files/data_cols.json', 'r') as openfile:
         cols = json.load(openfile)
 
     # Load the training and test data using the column names
